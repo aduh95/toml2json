@@ -55,7 +55,7 @@ jobs:
           tag ? `--tag ${tag[0]}` : "")'
         id: release_info
       - name: Download tarball
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: npm-tarball
       - name: Publish to NPM
